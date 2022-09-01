@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1,
+        "title": "Title string",
+        "content": null,
+        "actions": [
+            {
+                "id": 1,
+                "title": "Yes",
+                "result": "y",
+                "nextStep": [
+                    {
+                        "id": 2
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "No",
+                "result": "n",
+                "nextStep": [
+                    {
+                        "id": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Title string",
+        "content": null,
+        "actions": [
+            {
+                "id": 1,
+                "title": "Yes",
+                "result": "y",
+                "nextStep": [
+                    {
+                        "id": 3
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "No",
+                "result": "n",
+                "nextStep": [
+                    {
+                        "id": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Title string",
+        "content": "Content string",
+        "actions": [
+            {
+                "id": 1,
+                "title": "Yes",
+                "result": "y",
+                "nextStep": [
+                    {
+                        "id": 5,
+                        "conditions": [
+                            {
+                                "id": 1,
+                                "result": "y"
+                            },
+                            {
+                                "id": 2,
+                                "result": "y"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "conditions": [
+                            {
+                                "id": 1,
+                                "result": "y"
+                            },
+                            {
+                                "id": 2,
+                                "result": "n"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Title string",
+        "content": "Content string",
+        "actions": [
+            {
+                "id": 1,
+                "title": "Yes",
+                "result": "y",
+                "nextStep": [
+                    {
+                        "id": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Title string",
+        "content": "Content string"
+    }
+]
