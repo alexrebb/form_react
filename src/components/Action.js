@@ -17,7 +17,7 @@ const Action = ({
             }
 
             if (element.conditions) {
-                element.conditions.forEach((el) => {
+                element.conditions.forEach((el, index) => {
                     resultsState.forEach((item) => {
                         if (item.id === el.id && item.result === el.result) {
                             count++
@@ -25,8 +25,9 @@ const Action = ({
                     })
                     if (element.conditions.length === count) {
                         setNextStepIndex(element.id)
+                    }
+                    if (element.conditions.length === index + 1) {
                         count = 0
-                        return
                     }
                 })
             }
